@@ -1,0 +1,20 @@
+[
+  {
+    "id": "scheme_agr",
+    "name": "कृषि सहायता योजना",
+    "eligibility": {"min_age": 18, "max_income": 50000, "require_unemployed": false},
+    "description": "छोटे कृषक परिवारों के लिए आर्थिक सहायता।"
+  },
+  {
+    "id": "scheme_mahila_sahayata",
+    "name": "महिला सशक्तिकरण अनुदान",
+    "eligibility": {"min_age": 18, "max_income": 100000, "require_unemployed": false},
+    "description": "महिलाओं के लिए स्वरोजगार अनुदान।"
+  },
+  {
+    "id": "scheme_nirdhan",
+    "name": "गरीबी उन्मूलन सहायता",
+    "eligibility": {"min_age": 18, "max_income": 30000, "require_unemployed": true},
+    "description": "बेनीफिट उन परिवारों को जो बेरोजगार हैं और आय कम है।"
+  }
+]

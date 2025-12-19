@@ -1,0 +1,16 @@
+# Core
+sounddevice
+numpy
+pydub
+gTTS
+requests
+Flask
+SQLAlchemy
+sentence-transformers
+faiss-cpu
+vosk
+SpeechRecognition
+openai
+python-dotenv
+rich
+pytest

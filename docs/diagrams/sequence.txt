@@ -1,0 +1,8 @@
+User -> STT -> LLM Planner -> Executor (Eligibility / Retrieval / API) -> Evaluator -> TTS -> User
+
+Components:
+- Microphone
+- STT (Vosk / Google)
+- LLM Adapter (OpenAI / fallback)
+- Tools: Eligibility engine, Mock API, Retriever
+- Memory (SQLite)
