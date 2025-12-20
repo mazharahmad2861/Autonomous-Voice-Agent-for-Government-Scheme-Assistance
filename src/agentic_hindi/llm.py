@@ -17,7 +17,7 @@ class LLMAdapter:
         self.model = model
 
     def complete(self, prompt: str, **kwargs) -> Dict:
-        # ✅ Hard fallback if key missing
+        # Hard fallback if key missing
         if not GOOGLE_API_KEY:
             return {
                 "text": "कृपया अपनी जानकारी साझा करें।",
@@ -53,14 +53,14 @@ class LLMAdapter:
                 if parts and "text" in parts[0]:
                     text = parts[0]["text"]
 
-            # ✅ Guaranteed non-empty response
+            # Guaranteed non-empty response
             return {
                 "text": text if text else "कृपया अपनी जानकारी साझा करें।",
                 "raw": data,
             }
 
         except Exception as e:
-            print("❌ Gemini API error:", e)
+            print(" Gemini API error:", e)
             return {
                 "text": "कुछ तकनीकी समस्या आई है, कृपया फिर से प्रयास करें।",
                 "raw": None,
